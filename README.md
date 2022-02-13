@@ -85,3 +85,23 @@ https://github.com/conda-forge/miniforge
 ```bash
 brew install miniforge
 ```
+
+```bash
+const init zsh
+```
+
+## install X86 paython
+
+```bash
+# 新建名为rosetta的虚拟环境，该环境中的Python架构为x86，经过转译运行
+CONDA_SUBDIR=osx-64 conda create -n python.osx-64 python
+conda activate python.osx-64
+python -c "import platform;print(platform.machine())"  # 应输出“x86_64”
+
+# make sure that conda commands in this environment use intel packages
+conda env config vars set CONDA_SUBDIR=osx-64
+
+conda deactivate      # 需要reactivate该虚拟环境，以使设置生效
+conda activate python.osx-64
+echo "CONDA_SUBDIR: $CONDA_SUBDIR"       # 应输出“CONDA_SUBDIR: osx-64”
+```
