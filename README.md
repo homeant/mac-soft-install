@@ -105,3 +105,18 @@ conda deactivate      # 需要reactivate该虚拟环境，以使设置生效
 conda activate python.osx-64
 echo "CONDA_SUBDIR: $CONDA_SUBDIR"       # 应输出“CONDA_SUBDIR: osx-64”
 ```
+
+```bash
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/2to3 /usr/local/bin/2to3
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/2to3-3.10 -> /usr/local/bin/2to3-3.10
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/idle3 -> /usr/local/bin/idle3
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/idle3.10 -> /usr/local/bin/idle3.10
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/pip3 -> /usr/local/bin/pip3
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/pip3.10 -> /usr/local/bin/pip3.10
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/pydoc3 -> /usr/local/bin/pydoc3
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/pydoc3.10 -> /usr/local/bin/pydoc3.10
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/python3 -> /usr/local/bin/python3
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/python3-config -> /usr/local/bin/python3-config
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/python3.10 -> /usr/local/bin/python3.10
+ln -s /opt/homebrew/Caskroom/miniforge/base/envs/python.osx-64/bin/python3.10-config -> /usr/local/bin/python3.10-config
+```
