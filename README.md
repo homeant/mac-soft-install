@@ -87,10 +87,10 @@ brew install miniforge
 ```
 
 ```bash
-const init zsh
+conda init zsh
 ```
 
-## install X86 paython
+## install X86 python
 
 ```bash
 # 新建名为rosetta的虚拟环境，该环境中的Python架构为x86，经过转译运行
